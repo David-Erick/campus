@@ -1,0 +1,75 @@
+        :root {
+    --russian-violet: #31014E;
+    --raw-umber: #906F48;
+    --grape: #660C99;
+    --old-gold: #AFAB23;
+    --pear: #CADC00;
+}
+        body {
+    font-family: Arial, sans-serif;
+    background-color: var(--russian-violet);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--grape);
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: var(--raw-umber);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    color: var(--pear);
+    border-bottom: 2px solid var(--old-gold);
+    padding-bottom: 10px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    background-color: var(--old-gold);
+    color: #333;
+    padding: 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: left;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: var(--pear);
+    color: #000;
+}
+
+.content {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: var(--grape);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.content button {
+    background-color: var(--russian-violet);
+    color: #fff;
+    margin: 5px 0;
+}
+
+.content button:hover {
+    background-color: var(--pear);
+    color: #000;
+}

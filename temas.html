@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Desenvolvimento Front-end</title>
+    <link rel="stylesheet" href="assets/temas.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Categorias de Desenvolvimento Front-end</h1>
+    </header>
+
+    <main>
+        <section>
+            <button onclick="toggleContent('fundamentos')">
+                <text>
+                    Fundamentos
+                </text>
+            </button>
+            <div id="fundamentos" class="content">
+
+                <button>
+                    HTML
+                </button>
+
+                <button>
+                    CSS
+                </button>
+
+                <button>
+                    JavaScript
+                </button>
+
+            </div>
+        </section>
+
+        <section>
+            <button onclick="toggleContent('frameworks')">
+                <text>
+                    Frameworks
+                </text>
+            </button>
+            <div id="frameworks" class="content">
+                <button>
+                    React
+                </button>
+                <button>
+                    Angular
+                </button>
+                <button>
+                    Vue
+                </button>
+            </div>
+        </section>
+
+        <section>
+            <button onclick="toggleContent('responsivo')">
+                <text>
+                    Responsivo
+                </text>
+            </button>
+            <div id="responsivo" class="content">
+                <button>
+                    Flexbox
+                </button>
+                <button>
+                    Grid Layout
+                </button>
+                <button>
+                    Media Queries
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function toggleContent(id) {
+            const content = document.getElementById(id);
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
