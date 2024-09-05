@@ -1,0 +1,248 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #fff;
+}
+
+/* Paleta de Cores */
+:root {
+    --russian-violet: #31014e;
+    --raw-umber: #906f48;
+    --grape: #660c99;
+    --old-gold: #afab23;
+    --pear: #cadc00;
+
+    --gradient: linear-gradient(135deg, var(--russian-violet), var(--grape), var(--raw-umber));
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--russian-violet);
+    padding: 1rem 1rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    color: var(--pear);
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    list-style: none;
+}
+
+.navbar .nav-links li {
+    display: inline;
+    margin-left: 1.5rem;
+}
+
+.navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navbar .nav-links a:hover {
+    color: var(--pear);
+}
+
+/* Banner */
+.banner {
+    background: var(--gradient);
+    color: #fff;
+    padding: 4rem 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner::after {
+    content: "";
+    background: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.banner h1 {
+    font-size: 3rem;
+    position: relative;
+    z-index: 1;
+    font-weight: bold;
+}
+
+.banner h1 span {
+    color: var(--old-gold);
+}
+
+.banner h1:hover {
+    color: var(--pear);
+}
+
+/* Proposta do Projeto */
+.proposta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 0;
+    background-color: #252525;
+}
+
+.proposta-texto {
+    flex: 1;
+    padding-right: 2rem;
+}
+
+.proposta-texto p {
+    font-size: 1.2rem;
+    color: #ddd;
+    line-height: 1.8;
+}
+
+.proposta-imagem {
+    flex: 1;
+    text-align: center;
+}
+
+.proposta-imagem img {
+    width: 50%;
+    height: 50%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.proposta .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.utilizar-site .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Como Utilizar o Site */
+.utilizar-site {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 0;
+    background: var(--grape);
+    color: #fff;
+}
+
+.utilizar-imagem {
+    flex: 1;
+    text-align: center;
+}
+
+.utilizar-imagem img {
+    width: 60%;
+    height: 60%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.utilizar-texto {
+    flex: 1;
+    padding-left: 2rem;
+}
+
+.utilizar-texto h2 {
+    margin-bottom: 1rem;
+    color: var(--pear);
+    font-size: 1.8rem;
+}
+
+.utilizar-texto ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.utilizar-texto ul li {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--russian-violet);
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+    border-top: 3px solid var(--pear);
+}
+
+.footer p {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0 0;
+}
+
+.footer-links li {
+    display: inline;
+    margin-left: 1rem;
+}
+
+.footer-links a {
+    color: var(--old-gold);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* Botões */
+button {
+    background-color: var(--pear);
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--old-gold);
+}
+
+/* Animações e Hover */
+h1, h2, p {
+    transition: color 0.3s ease;
+}
+
+section:hover p {
+    color: var(--pear);
+}
+
